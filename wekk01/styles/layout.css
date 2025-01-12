@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav lu {
+    background-color: #000000;
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+
+}
+
+div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+section {
+    background-color: #cccccc;
+    /* height: 100px; */
+    width: auto;
+    
+}
+
+aside {
+    background-color: #ffffff;
+    width: auto;
+}
+
+footer{
+    background-color: #333333;
+    color: #ffffff;
+    text-align: center;
+
+}
