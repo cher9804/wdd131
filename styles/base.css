@@ -1,0 +1,177 @@
+:root {
+  --head-foot-background-color: #301a4b;
+  --head-foot-color: ;
+  --padding: 1rem;
+  --margin: 1rem;
+  --font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-size: 1rem; */
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* header */
+
+header h1 {
+  padding: 10px;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+header h1 span {
+  color: #ffc107;
+}
+
+header {
+  background-color: var(--head-foot-background-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #791e94;
+  border-radius: 15px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 20px 0;
+}
+
+nav li {
+  margin: 0 15px;
+  flex: 1 1 100%;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* main content */
+
+main {
+  display: grid;
+  flex-wrap: wrap; /* Si se reduce, este va abajo */
+  gap: 2rem; /* Si se reduce, hay espacio entre los elementos*/
+  max-width: 1200px;
+  padding: var(--padding);
+  margin: 2rem auto;
+  grid-template-columns: 3fr 2fr;
+}
+
+.card {
+  /* flex: 1 1 calc(50% - 1rem); */
+  border: 1px solid black;
+  padding: var(--padding);
+  border-radius: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.card-h2 {
+  margin-bottom: 1rem;
+  background-color: #791e94;
+  padding: 1.5rem;
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+}
+
+.about-content {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.about-content img {
+  max-width: 150px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.location {
+  margin-top: 2rem;
+}
+
+.colombia-title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+}
+
+.location-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.location-content img {
+  max-width: 200px;
+}
+
+.resources ul {
+  list-style: circle;
+}
+
+.resources ul li {
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+.resources ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.resources ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: var(--head-foot-background-color);
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-family: var(--font-family);
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem;
+}

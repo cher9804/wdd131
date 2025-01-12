@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Cristian Hernandez</title>
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Cristian Hernandez, home page"
+    />
+    <meta name="author" content="Cristian Hernandez" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>
+        WDD 131 - Dynamic Web Fundamentals - <span>Cristian C. Hernandez</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+          <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+              >Scripture</a
+            >
+          </li>
+          <li><a href="#">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="card about-me">
+        <div class="card-h2">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <p>
+            This is Cristian Hernandez. I am from Colombia, and I am an
+            enthusiastic and lifelong learner with over 3 years of experience in
+            Sales and Customer Success.Throughout my career, I’ve cultivated
+            strong communication and problem-solving skills, which have helped
+            me build lasting relationships with clients and drive results. Right
+            now, I am on an exciting journey studying Software Development,
+            aiming to transition my career into the technology industry.
+          </p>
+          <img
+            src="images/profile.jpg"
+            alt="Cristian Hernandez with a gray background"
+          />
+        </div>
+        <div class="location">
+          <h3 class="colombia-title">Colombia</h3>
+          <div class="location-content">
+            <img src="images/colombian-picture.jpg" alt="Colombian landscape" />
+            <p>
+              Colombia is a diverse and vibrant country in South America, known
+              for its rich culture, music like vallenato and cumbia, stunning
+              landscapes ranging from Caribbean beaches to the Andes mountains,
+              and its delicious cuisine, including arepas, bandeja paisa, and
+              world-class coffee. It also stands out for its history, warm
+              people, and exceptional biodiversity.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="card resources">
+        <div class="card-h2">
+          <h2>Web Dev Resources</h2>
+        </div>
+        <ul>
+          <li class="card-items"><a href="#">Dev.to Community</a></li>
+          <li class="card-items"><a href="#">Smashing Magazine</a></li>
+          <li class="card-items"><a href="#">CSS Tricks</a></li>
+          <li class="card-items"><a href="#">W3 Schools</a></li>
+          <li class="card-items"><a href="#">Udemy</a></li>
+          <li class="card-items"><a href="#">Image Placeholder</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Cristian Hernandez, Colombia.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
