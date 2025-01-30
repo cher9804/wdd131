@@ -1,0 +1,111 @@
+<!-- // learning activity -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD Learning Modules - ToDo App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .todos {
+            width: 300px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .todos > li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid;
+            padding: 0.5em;
+            margin-bottom: 5px;
+        }
+        .todos p {
+            margin: 0;
+        }
+        .todos span {
+            cursor: pointer;
+        }
+        .strike {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="byu-i-logo.png" alt="BYU-I Logo">
+        <h1>WDD Learning Modules</h1>
+        <nav>
+            <a href="#">Home</a> | <a href="#">HTML</a> | <a href="#">JS</a> | <a href="#">CSS</a> | <a href="#">Design</a> | <a href="#">General</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>DOM Events - Ponder</h2>
+        <p>This activity will walk us through building a simple To-do application that will allow you to add a task, mark a task as completed, and remove a task.</p>
+        
+        <section>
+            <h3>To-Do List</h3>
+            <label for="todo">Enter Task:</label>
+            <input type="text" id="todo" name="todo">
+            <button id="submitTask">Enter</button>
+            <ul id="todoList" class="todos"></ul>
+        </section>
+    </main>
+    
+    <script>
+        let tasks = [];
+
+        function taskTemplate(task) {
+            return `
+                <li ${task.completed ? 'class="strike"' : ""}>
+                    <p>${task.detail}</p>
+                    <span data-action="delete">❎</span>
+                    <span data-action="complete">✅</span>
+                </li>
+            `;
+        }
+
+        function renderTasks() {
+            const listElement = document.querySelector("#todoList");
+            listElement.innerHTML = tasks.map(taskTemplate).join("");
+        }
+
+        function newTask() {
+            const taskDetail = document.querySelector("#todo").value;
+            if (taskDetail.trim() !== "") {
+                tasks.push({ detail: taskDetail, completed: false });
+                renderTasks();
+                document.querySelector("#todo").value = "";
+            }
+        }
+
+        function removeTask(taskElement) {
+            tasks = tasks.filter(task => task.detail !== taskElement.querySelector("p").innerText);
+            taskElement.remove();
+        }
+
+        function completeTask(taskElement) {
+            const taskIndex = tasks.findIndex(task => task.detail === taskElement.querySelector("p").innerText);
+            tasks[taskIndex].completed = !tasks[taskIndex].completed;
+            taskElement.classList.toggle("strike");
+        }
+
+        function manageTasks(event) {
+            const parent = event.target.closest("li");
+            if (event.target.dataset.action === "delete") {
+                removeTask(parent);
+            } else if (event.target.dataset.action === "complete") {
+                completeTask(parent);
+            }
+        }
+
+        document.querySelector("#submitTask").addEventListener("click", newTask);
+        document.querySelector("#todoList").addEventListener("click", manageTasks);
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <section>
+      <img
+        src="images/dinosaur.png"
+        alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth."
+      />
+      <p>
+        Here we will add a link to the
+        <a href="https://www.mozilla.org/">Mozilla homepage</a>
+      </p>
+    </section>
+    <script>
+      const link = document.querySelector("a"); //this grab the first "a" anchor element, if we want to get all of them we need to use the document.querySelectorAll()
+      link.textContent = "Mozilla Developer Network";
+      link.href = "https://developer.mozilla.org";
+
+      const sect = document.querySelector("section");
+      const para = document.createElement("p");
+      para.textContent = "We hope you enjoyed the ride.";
+      sect.appendChild(para);
+      
+      const text = document.createTextNode(
+        " - the premier source for web development knowledge.",
+      );
+      const linkPara = document.querySelector("p");
+      linkPara.appendChild(text);
+
+      sect.appendChild(linkPara); //changes de linkPara location to the end of the section, if we want to clone we can use the Node.cloneNode()
+
+      // sect.removeChild(linkPara);
+
+      // linkPara.remove(); // we use this one so that the element removes itself, but it is not supported in older browsers, we would do the following instead
+
+      linkPara.parentNode.removeChild(linkPara);
+
+      // Document.stylesheets() to get the actual stylesheets
+
+      // to dynamically style elements we use the HTMLElement.style
+
+      // para.style.color = "white";
+      // para.style.backgroundColor = 'black';
+      // para.style.padding = "10px";
+      // para.style.width = "250px";
+      // para.style.textAlign = "center";
+// We can either provide the attributes in the way above or set the attribute based on data grab from a CSS rule
+
+      para.setAttribute("class", "highlight");
+    </script>
+  </body>
+</html>
