@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,171 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <script>
-        // const hamButton = document.querySelector('#menu');
-// const navigation = document.querySelector('.navigation');
-
-// hamButton.addEventListener('click', () => {
-// 	navigation.classList.toggle('open');
-// 	hamButton.classList.toggle('open');
-// });
-
-// Get the current year
-const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
-
-// Get the last modified date of the document
-const lastModifiedDate = document.lastModified;
-document.getElementById("lastModified").textContent = `Last Modified: ${lastModifiedDate}`;
-
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-	navigation.classList.toggle('open');
-	hamButton.classList.toggle('open');
-});
-    </script>
-    <style>
-:root {
-    --head-foot-background-color: #4B0082;
-    --padding: 1rem;
-    --margin: 1rem;
-    --margin-center: 1rem auto;
-    --font-family: Roboto, Arial, sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font-family);
-    text-align: center;
-}
-
-
-header, footer{
-    background-color: var(--head-foot-background-color);
-    padding: var(--padding);
-    color: white;
-}
-/* small view navigation */
-#menu {
-	border: 0;
-	background: none;
-	color: #000;
-	position: absolute;
-	top: 1rem;
-	right: 1rem;
-}
-
-#menu::before {
-	content: "☰";
-}
-
-#menu.open::before {
-	content: "Close";
-}
-
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    /* background-color: var(--head-foot-background-color); */
-    align-items: center;
-    flex-direction: row;
-}
-
-.logo{
-    font-size: 22px;
-    color: white;
-    flex-direction: column;
-    font-weight: 700;
-    padding-left: var(--padding);
-}
-
-.navigation{
-    display: flex;
-    list-style: none;
-    flex-direction: column;
-    padding-right: var(--padding);
-}
-
-nav .navigation li{
-    margin: 0 15px;
-}
-
-nav .navigation li a{
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-}
-.open a {
-	display: block;
-}
-
-h1 {
-    margin: 1rem 0;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    padding: var(--padding);
-    margin: auto;
-}
-
-.image-card{
-    text-align: center;
-}
-
-.image-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-
-}
-
-@media (min-width: 37.5em) {
-
-#menu {
-    display: none; /* hide hamburger button */
-}
-nav {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--head-foot-background-color);
-    align-items: center;
-}
-.navigation{
-    flex-direction: row;
-
-}
-.navigation a {
-    display: block;
-    flex: 1 1 100%;
-}
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    padding: var(--padding);
-    margin: auto;
-    max-width: 900px;
-}
-}
-
-
-    </style> -->
   </head>
   <body>
     <header>
       <button id="menu"></button>
       <nav>
-        <div class="logo">Temple Album</div>
+        <div class="logo"><h1>Temple Album</h1></div>
         <ul class="navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">Old</a></li>
@@ -192,74 +34,47 @@ nav {
       </nav>
     </header>
     <main>
-      <h1>Home</h1>
+      <h2>Home</h2>
 
       <div class="gallery">
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota - Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota - Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota - Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota - Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota-Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota-Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota-Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota-Colombia</p>
-        </div>
-        <div class="image-card">
-          <img
-            src="https://picsum.photos/300/200"
-            alt="Bogota Temple Placeholder"
-          />
-          <p class="image-text">Bogota-Colombia</p>
-        </div>
-      </div>
-    </main>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+        <figure class="image-card">
+            <img src="https://picsum.photos/300/200" alt="Bogota Temple Placeholder" />
+            <figcaption class="image-text">Bogota - Colombia</figcaption>
+        </figure>
+    </div>
+        </main>
     <footer>
       <p>&copy; <span id="currentyear"></span> Cristian Hernandez, Colombia.</p>
       <p id="lastModified"></p>
