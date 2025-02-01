@@ -1,0 +1,130 @@
+:root {
+    --head-foot-background-color: #4B0082;
+    --padding: 1rem;
+    --margin: 1rem;
+    --margin-center: 1rem auto;
+    --font-family: Roboto, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+
+header, footer{
+    background-color: var(--head-foot-background-color);
+    padding: var(--padding);
+    color: white;
+}
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    cursor: pointer;
+	border: 0;
+	background: none;
+	color: white;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "X";
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: var(--head-foot-background-color); */
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    font-size: 22px;
+    color: white;
+    flex-direction: column;
+    font-weight: 700;
+    padding-left: var(--padding);
+}
+
+.navigation{
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    padding-right: var(--padding);
+    justify-content: space-around;
+}
+
+.navigation li{
+    margin: 0 15px;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    display: none;
+    padding: var(--padding);
+}
+.navigation a:hover {
+	background-color: #bbb;
+	color: #333;
+	font-weight: 700;
+}
+
+
+.open a {
+	display: block;
+}
+
+h1 {
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: var(--padding);
+    margin: auto;
+}
+
+.image-card{
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+
+}
+
+
+/* .navigation {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: var(--head-foot-background-color);
+    width: 100%;
+    text-align: center;
+} */
+
+/* .navigation.open {
+    display: flex; 
+} */

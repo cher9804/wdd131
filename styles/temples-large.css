@@ -1,0 +1,32 @@
+@media (min-width: 37.5em) {
+
+#menu {
+    display: none; /* hide hamburger button */
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--head-foot-background-color);
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.navigation{
+    flex-direction: row;
+
+}
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+    padding: var(--padding);
+    margin: auto;
+    max-width: 900px;
+}
+}
