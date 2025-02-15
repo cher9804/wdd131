@@ -49,23 +49,28 @@ p {
   border-top: var(--bord);
   border-left: var(--bord);
 }
+/* Selecciona las columnas pares dentro de cada fila */
 
 .col:nth-child(even) {
     border-right: var(--bord);
 }
+/* Aplica estilos solo a la última fila de la tabla */
 
 .row:last-child {
     border-bottom: var(--bord);
     background-color: #bbb;
 }
+/* Cambia el color del enlace cuando está activo (clickeado) */
 
 a:active {
   color: navy;
 }
+/* Cambia el color del enlace cuando ha sido visitado */
 
 a:visited {
   color: navy;
 }
+/* Cambia el color del enlace cuando el cursor pasa sobre él */
 
 a:hover {
   color: purple;

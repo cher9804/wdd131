@@ -36,22 +36,30 @@ label {
 	margin: 0.25rem;
 	padding: 0.5rem;
 }
+/* Cambia el color de fondo y el color del texto cuando el usuario selecciona un texto dentro del elemento */
 
 .sel::selection {
 	background-color: #000;
 	color: yellow;
 }
+/* Aplica estilos solo a la primera línea del párrafo */
 
 .firstline::first-line {
 	color: tomato;
 }
+/* Aplica estilos solo a la primera letra del párrafo */
+
 .firstletter::first-letter {
 	color: navy;
 	font-size: 2rem;
 }
+/* Agrega un emoji 🎈 antes del contenido del elemento */
+
 .before::before {
 	content: "🎈 ";
 }
+/* Agrega un emoji 🌮 después del contenido del elemento */
+
 .after::after {
 	content: " 🌮";
 }
@@ -60,6 +68,7 @@ ol {
 	list-style: numeric;
 	margin-left: 3rem;
 }
+/* Cambia el marcador (bullet) de la lista ordenada por un icono ✓ de color dorado */
 
 ol li::marker {
   content: "✓ ";
@@ -67,10 +76,12 @@ ol li::marker {
   font-size: 2rem;
 
 }
+/* Incrementa un contador personalizado para cada elemento con la clase .counter */
 
 .counter {
 	counter-increment: paras;
 }
+/* Muestra el valor del contador personalizado antes del contenido del elemento */
 
 .counter::before {
 	content: "🔸" counter(paras) ":";
@@ -79,6 +90,7 @@ ol li::marker {
 .counter {
 	font-family: courier;
 }
+/* Agrega un icono de llave 🗝️ antes del contenido de los elementos con la clase .mark-complete */
 
 .mark-complete::before {
 	content: "🗝️ ";

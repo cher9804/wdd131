@@ -6,8 +6,6 @@ function calculateWindChill(temperature, windSpeed) {
     } else {
         return "N/A";
     }
-
-
 }
 
 
