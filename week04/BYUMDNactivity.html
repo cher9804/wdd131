@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Activities</title>
+  </head>
+  <body>
+    <ul id="myList"></ul>
+
+    <script>
+      // arrays.js
+      const steps = ["one", "two", "three"];
+
+      // Función para convertir cada paso en un string de HTML
+      const listTemplate = function (step) {
+        return `<li>${step}</li>`; // Usamos backticks para la plantilla literal
+      };
+
+      // Usamos map para convertir la lista de strings a HTML
+      const stepsHtml = steps.map(listTemplate);
+
+      console.log(stepsHtml);
+
+      // Establecemos el innerHTML de la lista en el documento
+      document.querySelector("#myList").innerHTML = stepsHtml.join(""); // Usamos "" para evitar las comas
+
+      const grades = ["A", "B", "A"];
+      function convertGradeToPoints(grade) {
+        let points = 0;
+        if (grade === "A") {
+          points = 4;
+        } else if (grade === "B") {
+          points = 3;
+        }
+        return points;
+      }
+      const gpapoints = grades.map(convertGradeToPoints);
+      console.log(gpapoints);
+
+      const GPA =
+        gpapoints.reduce((points, gpaGrade) => points + gpaGrade, 0) /
+        gpapoints.length;
+      console.log(GPA);
+
+      const fruits = ["watermelon", "peach", "apple", "tomato", "grape"];
+      const filteredFruits = fruits.filter((fruit) => fruit.length < 6);
+      console.log(filteredFruits);
+      const number = [12, 34, 21, 54];
+      const luckyNumber = 21;
+      let luckyIndex = number.indexOf(luckyNumber);
+      console.log(luckyIndex)
+
+    </script>
+  </body>
+</html>
