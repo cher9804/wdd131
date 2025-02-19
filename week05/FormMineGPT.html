@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Proposal</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #1e1e2f, #3a3a55);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Form Container */
+        .wf1 {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(12px);
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            max-width: 500px;
+            margin: 2rem auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .wf1:hover {
+            transform: scale(1.02);
+        }
+
+        .wf1 fieldset {
+            border: none;
+            margin-bottom: 1.5rem;
+            padding: 1rem;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .wf1 legend {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        /* Input Fields */
+        .wf1 input[type="text"],
+        .wf1 input[type="tel"],
+        .wf1 input[type="email"],
+        .wf1 input[type="url"],
+        .wf1 input[type="date"],
+        .wf1 select,
+        .wf1 input[type="number"] {
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            border-radius: 6px;
+            padding: 10px;
+            width: 100%;
+            font-size: 1rem;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .wf1 input:focus,
+        .wf1 select:focus {
+            background: rgba(255, 255, 255, 0.4);
+            outline: none;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        /* Checkbox & Radio */
+        .wf1 input[type="checkbox"],
+        .wf1 input[type="radio"] {
+            accent-color: #ffcc00;
+            transform: scale(1.2);
+            margin-right: 8px;
+        }
+
+        /* Submit Button */
+        .wf1 input[type="submit"] {
+            background: linear-gradient(45deg, #ffcc00, #ff6600);
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .wf1 input[type="submit"]:hover {
+            background: linear-gradient(45deg, #ff9900, #ff3300);
+            box-shadow: 0 0 12px rgba(255, 102, 0, 0.7);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Course Proposal Application</h1>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label>Website <input type="url" name="url" placeholder="http://"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Course Information</legend>
+                <div>Audience</div>
+                <label><input type="radio" name="audience" value="beginner">Beginner</label>
+                <label><input type="radio" name="audience" value="intermediate">Intermediate</label>
+                <label><input type="radio" name="audience" value="advanced">Advanced</label>
+                <div>Software Needed</div>
+                <label><input type="checkbox" name="editing" value="yes">Photo Editing</label>
+                <label><input type="checkbox" name="code" value="yes">Coding</label>
+                <label><input type="checkbox" name="process" value="yes">Preprocessor</label>
+                <label><input type="checkbox" name="client" value="yes">FTP Client</label>
+            </fieldset>
+            <fieldset>
+                <legend>Funding</legend>
+                <label>Anticipated Completion Date <input type="date" name="completeDate"></label>
+                <label>Course Subject
+                    <select name="Subject">
+                        <option value="">Please select &#9662</option>
+                        <option value="Software">Software Development</option>
+                        <option value="creative">Creative Professional</option>
+                        <option value="info">Information Technology</option>
+                        <option value="data">Data Professional</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                        <option value="business">Business Professional</option>
+                        <option value="security">Cyber Security</option>
+                    </select>
+                </label>
+                <label>How Many Authors <input type="number" name="authors"></label>
+            </fieldset>
+            <input type="submit" value="Propose My Course">
+        </form>
+    </main>
+    <footer>
+        &copy; 2024 &bull; Paul Cheney &bull; 123-555-6789
+    </footer>
+</body>
+</html>
