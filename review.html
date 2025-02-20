@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Thank You for Your Review!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+
+    <script>
+        // Track Number of Reviews
+        let reviewCount = localStorage.getItem("reviewCount") || 0;
+        reviewCount++;
+        localStorage.setItem("reviewCount", reviewCount);
+        document.getElementById("reviewCount").textContent = reviewCount;
+    </script>
+
+</body>
+</html>

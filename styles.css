@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F3E5F5;
+    color: #3E2723;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form Container */
+form {
+    background-color: #D7CCC8;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    color: #4A148C;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs and Select */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Checkboxes and Radio Buttons */
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Radio Button Container */
+div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Submit Button */
+button {
+    background-color: #6A1B9A;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #4A148C;
+}
+
+/* Review Confirmation Page */
+#reviewCount {
+    font-weight: bold;
+    color: #D81B60;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+
+    input, select, textarea, button {
+        font-size: 14px;
+    }
+}

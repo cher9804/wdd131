@@ -1,0 +1,154 @@
+/* Reset de caja */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Body: fondo blanco y texto negro */
+  body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Encabezado */
+  header {
+    background-color: #003366; /* azul oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Contenido principal */
+  main {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Formulario */
+  form {
+    background-color: #f5f5f5; /* gris muy claro */
+    border: 2px solid #333333;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+  
+  /* Etiquetas */
+  form label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  /* Inputs, select y textarea */
+  select,
+  input[type="text"],
+  input[type="date"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+    border-radius: 4px;
+    margin-top: 0.5rem;
+  }
+  
+  /* Sección de rating */
+  .rating {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+  }
+  
+  .rating-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .star-label {
+    font-size: 1.5rem;
+    margin-bottom: 0.25rem;
+    color: #333333;
+  }
+  
+  /* Radio buttons */
+  .rating-group input[type="radio"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Grupo de checkboxes */
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+  
+  .checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .checkbox-item input[type="checkbox"] {
+    width: 1.25rem;
+    height: 1.25rem;
+    cursor: pointer;
+  }
+  
+  /* Botón de envío */
+  #post {
+    background-color: #0055aa;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    width: 100%;
+  }
+  
+  #post:hover,
+  #post:focus {
+    background-color: #003366;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem auto 0;
+    max-width: 600px;
+  }
+  
+  footer p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Outline accesible en foco */
+  a:focus, button:focus, input:focus, select:focus, textarea:focus {
+    outline: 3px solid #ffbf47;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 600px) {
+    form {
+      margin: 0 1rem;
+    }
+  }
+  
