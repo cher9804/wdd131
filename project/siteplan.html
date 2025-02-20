@@ -1,46 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Temple Album</title>
-    <meta
-      name="description"
-      content="Temple pictures using the media rule and the hamburguer menu"
-    />
-    <meta name="author" content="Cristian Hernandez" />
-    <link rel="stylesheet" href="styles/temples1.css" />
-    <link rel="stylesheet" href="styles/temples-large1.css" />
-    <script src="scripts/temples1.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <button id="menu"></button>
-      <nav>
-        <div class="logo"><h1>Temple Album</h1></div>
-        <ul class="navigation">
-          <li><a href="#Home" class="home">Home</a></li>
-          <li><a href="#Old" class="old">Old</a></li>
-          <li><a href="#New" class="new">New</a></li>
-          <li><a href="#Large" class="large">Large</a></li>
-          <li><a href="#Small" class="small">Small</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Home</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BPO Colombia - Website Planning Document</title>
+  <style>
+    /* Basic styling for the planning document */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #ececec;
+      padding: 15px;
+      text-align: center;
+      border-radius: 5px;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    main {
+      margin: 20px 0;
+    }
+    section {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      margin-left: 20px;
+    }
+    a {
+      color: #3498db;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>BPO Colombia - Website Planning Document</h1>
+  </header>
+  <main>
+    <!-- Site Name Section -->
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <p><strong>Name:</strong> BPO Colombia</p>
+      <p><strong>Description:</strong> BPO Colombia is a modern business process outsourcing platform that connects US companies with highly qualified candidates from Colombia. The name reflects our commitment to quality, efficiency, and leveraging Colombia’s growing talent pool.</p>
+      <p><strong>Logo:</strong> The website will feature a custom logo that blends modern design with subtle nods to Colombian culture.</p>
+    </section>
+    
+    <!-- Site Purpose Section -->
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>The primary purpose of BPO Colombia is to serve as a comprehensive hub that provides:</p>
+      <ul>
+        <li>Connections between US companies and skilled professionals from Colombia.</li>
+        <li>Detailed information on outsourcing services and processes.</li>
+        <li>Resources for both companies and candidates regarding outsourcing benefits.</li>
+        <li>A user-friendly contact form for inquiries and service requests.</li>
+      </ul>
+      <p>This platform aims to streamline the outsourcing process and enhance communication between businesses and talent.</p>
+    </section>
+    
+    <!-- Scenarios Section -->
+    <section id="scenarios">
+      <h2>Scenarios</h2>
+      <p>To drive content development and ensure the site meets its audience’s needs, here are some key scenarios:</p>
+      <ul>
+        <li><strong>For Companies:</strong> "How can BPO Colombia help me efficiently source top talent from Colombia?"</li>
+        <li><strong>For Candidates:</strong> "What opportunities does BPO Colombia offer for professionals seeking to work with US companies?"</li>
+      </ul>
+    </section>
+    
+    <!-- Color Schema Section -->
+    <section id="color-schema">
+      <h2>Color Schema</h2>
+      <p>The selected color scheme for BPO Colombia uses a modern pastel palette:</p>
+      <ul>
+        <li><strong>Primary Color:</strong> <code>#a2d5f2</code> – used for headers, navigation bars, and call-to-action buttons.</li>
+        <li><strong>Secondary Color:</strong> <code>#f7a1b5</code> – applied for accents and highlights.</li>
+        <li><strong>Accent Color:</strong> <code>#ffefd5</code> – used for background elements and subtle design touches.</li>
+      </ul>
+      <p>This color scheme provides a fresh, professional, and friendly look that resonates with the outsourcing industry.</p>
+    </section>
+    
+    <!-- Typography Section -->
+    <section id="typography">
+      <h2>Typography</h2>
+      <p>The website will incorporate the following fonts to maintain clarity and style:</p>
+      <ul>
+        <li><strong>Heading Font:</strong> 'Roboto Slab', serif – for all main headings and titles to ensure a strong, modern appearance.</li>
+        <li><strong>Body Font:</strong> 'Poppins', sans-serif – for all paragraph text and general content, ensuring readability.</li>
+      </ul>
+      <p>This combination strikes the perfect balance between sophistication and readability.</p>
+    </section>
+    
+    <!-- Wireframe Section -->
+    <section id="wireframe">
+      <h2>Wireframe</h2>
+      <p>The homepage layout for BPO Colombia has been designed for both mobile and desktop views:</p>
+      <h3>Mobile View</h3>
+      <ul>
+        <li>A header with the logo and a vertical navigation menu.</li>
+        <li>A hero section with an engaging image and a key call-to-action.</li>
+        <li>A single-column layout that sequentially displays sections such as About, Services, Pricing, Impact, and Contact.</li>
+      </ul>
+      <h3>Desktop View</h3>
+      <ul>
+        <li>A horizontal navigation bar with the logo positioned on the left.</li>
+        <li>A full-width header section featuring a prominent hero image and call-to-action.</li>
+        <li>Multi-column layout for content sections to make full use of the screen space.</li>
+      </ul>
+      <p>Wireframe sketches will be created using digital tools like Figma or Adobe XD, and they will be refined as the project evolves.</p>
+    </section>
+    <h1>Wireframe Sketches for BPO Colombia</h1>
 
-      <div class="gallery"></div>
-    </main>
-    <footer>
-      <p>&copy; <span id="currentyear"></span> Cristian Hernandez, Colombia.</p>
-      <p id="lastModified"></p>
-    </footer>
-  </body>
+    <!-- Mobile Wireframe -->
+    <div class="wireframe-container">
+      <h2>Mobile View</h2>
+      <svg width="300" height="600" xmlns="http://www.w3.org/2000/svg">
+        <!-- Header -->
+        <rect x="0" y="0" width="300" height="50" fill="#cccccc" stroke="#000" />
+        <text x="150" y="30" text-anchor="middle" fill="#000" font-size="12">Header (Logo)</text>
+        <!-- Navigation (Vertical) -->
+        <rect x="0" y="50" width="300" height="40" fill="#e0e0e0" stroke="#000" />
+        <text x="150" y="75" text-anchor="middle" fill="#000" font-size="12">Nav (Vertical)</text>
+        <!-- Hero Section -->
+        <rect x="0" y="90" width="300" height="150" fill="#bbbbbb" stroke="#000" />
+        <text x="150" y="170" text-anchor="middle" fill="#000" font-size="12">Hero Image</text>
+        <!-- Content Section -->
+        <rect x="0" y="240" width="300" height="260" fill="#dddddd" stroke="#000" />
+        <text x="150" y="370" text-anchor="middle" fill="#000" font-size="12">Content (One Column)</text>
+        <!-- Footer -->
+        <rect x="0" y="500" width="300" height="100" fill="#cccccc" stroke="#000" />
+        <text x="150" y="560" text-anchor="middle" fill="#000" font-size="12">Footer</text>
+      </svg>
+    </div>
+  
+    <!-- Desktop Wireframe -->
+    <div class="wireframe-container">
+      <h2>Desktop View</h2>
+      <svg width="600" height="400" xmlns="http://www.w3.org/2000/svg">
+        <!-- Header with Logo and Horizontal Navigation -->
+        <rect x="0" y="0" width="600" height="60" fill="#cccccc" stroke="#000"/>
+        <text x="300" y="40" text-anchor="middle" fill="#000" font-size="14">Header (Logo & Horizontal Nav)</text>
+        <!-- Hero Section -->
+        <rect x="0" y="60" width="600" height="180" fill="#bbbbbb" stroke="#000"/>
+        <text x="300" y="160" text-anchor="middle" fill="#000" font-size="14">Hero Image</text>
+        <!-- Content Section -->
+        <rect x="0" y="240" width="600" height="100" fill="#dddddd" stroke="#000"/>
+        <text x="300" y="290" text-anchor="middle" fill="#000" font-size="14">Content (Multi-Column Layout)</text>
+        <!-- Footer -->
+        <rect x="0" y="340" width="600" height="60" fill="#cccccc" stroke="#000"/>
+        <text x="300" y="380" text-anchor="middle" fill="#000" font-size="14">Footer</text>
+      </svg>
+    </div>
+    
+    <!-- CSS Section -->
+    <section id="css">
+      <h2>CSS</h2>
+      <p>The supporting CSS will ensure the site is:</p>
+      <ul>
+        <li>Responsive, using media queries to adjust for mobile and desktop layouts.</li>
+        <li>Consistent with the chosen color schema and typography.</li>
+        <li>Optimized for performance and accessibility, adhering to modern web standards.</li>
+      </ul>
+      <p>This will help create a visually appealing and user-friendly experience across all devices.</p>
+    </section>
+    
+    <!-- Testing Section -->
+    <section id="testing">
+      <h2>Testing</h2>
+      <p>The website will be thoroughly tested using:</p>
+      <ul>
+        <li>HTML and CSS validators to ensure code quality and standards compliance.</li>
+        <li>Accessibility testing tools such as Lighthouse and WAVE to meet WCAG guidelines.</li>
+        <li>Performance evaluations and SEO audits to optimize the user experience.</li>
+        <li>Color contrast checks to ensure visual accessibility.</li>
+      </ul>
+      <p>This comprehensive testing strategy will guarantee that BPO Colombia meets industry best practices.</p>
+    </section>
+    
+    <!-- Submission Section -->
+    <section id="submission">
+      <h2>Submission</h2>
+      <p>Once the planning document and website project are complete, I will commit and push the work to the course repository. The repository URL will then be submitted via Canvas.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 BPO Colombia - Cristian Hernandez - Dynamic Web Fundamentals.</p>
+  </footer>
+</body>
 </html>
